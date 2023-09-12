@@ -11,31 +11,44 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={uniStyles.headingMd}>
-        <p>Hi, I'm <strong>itachi-p</strong>.I love animals and like vegetable curry.</p>
-        <p>
+        <p>Hi, I'm <strong>itachi-p</strong>.</p>
+        <p>I love animals🐻🐯🐱🐦‍⬛🐸🪲 and like vegetable curry🍛.</p>
+        {/* <p>
           (This is a sample website - you'll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        </p> */}
+        <hr />
       </section>
       <main>
-        <h3 className="title">
-          Read{' '}
-          <Link href={`/posts/about`}>
-            about me!
-          </Link>
-        </h3>
-        <h3 className='title'>
-        <Link href={`/posts/recent-reads`}>
-            Recently read books
-          </Link>
-        </h3>
-
+        <strong>
+          <li>
+            Read{' '}
+            <Link href={`/posts/about`}>
+              about me!
+            </Link>
+          </li>
+          <li>
+            <Link href={`/posts/recent-reads`}>
+              Recently read books
+            </Link>
+          </li>
+          <li>
+            My&nbsp;
+            <Link href="https://lit.link/itachi">Lit.Link</Link>
+          </li>
+        <li>
         <Link href="https://www.pinterest.jp/itachip38/">
-        <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
+          ビンタですと(？)🐧👏
+          <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
         </Link>
-        Contact me:&nbsp;
-        <Link href="https://lit.link/itachi">My Lit.Link</Link>
+        </li>
+        </strong>
       </main>
+
+      <hr />
+      <footer>
+        <p>© 2023 itachi-p</p>
+      </footer>
     </Layout>
 
   );

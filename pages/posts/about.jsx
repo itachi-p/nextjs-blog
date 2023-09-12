@@ -9,7 +9,7 @@ export default function FirstPost() {
             <Head>
                 <title>About me</title>
             </Head>
-            <h1>I'm sorry. This page is still under construction.</h1>
+            <h1>Sorry. This page is still under construction.</h1>
             <Image src="/images/nante-cotta.jpg"
                 width={480}
                 height={270}
