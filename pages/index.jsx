@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import uniStyles from '../styles/utils.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -15,6 +17,19 @@ export default function Home() {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+      <main>
+        <h1 className="title">
+          Read{' '}
+          <Link href={`/posts/first-post`}>
+            this page!
+          </Link>
+        </h1>
+        <Link href="https://www.pinterest.jp/itachip38/">
+        <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
+        </Link>
+        <Link href="https://lit.link/itachi">My Lit.Link</Link>
+      </main>
     </Layout>
+
   );
 }
