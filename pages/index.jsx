@@ -27,6 +27,7 @@ export default function Home() {
         <Link href="https://www.pinterest.jp/itachip38/">
         <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
         </Link>
+        Contact me:&nbsp;
         <Link href="https://lit.link/itachi">My Lit.Link</Link>
       </main>
     </Layout>
