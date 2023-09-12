@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>itachi-p's blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index.jsx</code>
         </p>
 
         <div className={styles.grid}>
@@ -57,7 +57,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" className={styles.logo} />
         </a>
       </footer>
 
