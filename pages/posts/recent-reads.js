@@ -8,23 +8,31 @@ export default function RecentReads(props) {
     const postLists = props.postLists.records;
     console.log(postLists);
     return (
-        <Layout>
+        <Layout utilStyles>
             <Head>
-                <title>Recently read books</title>
+                <title>Recently read books📖</title>
             </Head>
             <h1 className="title">Recently read books</h1>
+            <p>(ORDER BY read_date DESC)</p>
+            <hr />
             {/* JSONファイルを読み込み、リスト形式で表示する */}
-
             {postLists.map((post, index) => (
-                <div key={index}>
+                <section className="list" key={index}>
+                    {/* 1行毎に背景色を変更(外部CSSで実装するよう変更) */}
+                    {/* <style jsx>{`
+                    div {
+                        background-color: ${index % 2 === 0 ? '#f5f5f5' : '#fff'};
+                    }
+                    `}</style> */}
                     {index + 1}.&nbsp;
                     <Link href={post.book.url}>
-                       {post.book.title}
+                        {post.book.title}
                     </Link>
-                    <p>(著者): {post.book.author}</p>
-                    <p>(購入日): {post.date}</p>
-                    <p>(概要・読書目的): {post.what}</p>
-                </div>
+                    <p><span>Author</span>: {post.book.author}</p>
+                    <p><span>Purchase date</span>: {post.date}</p>
+                    <p><span>Total pages</span>: {post.book.page}</p>
+                    <p><span>Overview | Purpose</span>: {post.what}</p>
+                </section>
             ))}
         </Layout>
     );

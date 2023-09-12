@@ -1,6 +1,40 @@
 {
-    "recordsCount": 2,
     "records": [
+        {
+            "date": "2023-09-12",
+            "what": "技術者の為の総合的な生き方指南",
+            "book": {
+                "author": "John Sonmez",
+                "translator": "長尾 高弘",
+                "commentator": "まつもと ゆきひろ(Matz)",
+                "publish date": "2022/2/21",
+                "page": 474,
+                "title": "SOFT SKILLS ソフトウェア開発者の人生マニュアル 第2版",
+                "url": "https://www.amazon.co.jp/dp/4296000500/",
+                "overview": [
+                    "1.キャリア(Career)",
+                    "2.セルフマーケティング(Self Marketing)",
+                    {
+                        "3.学習(Learning)": [
+                            "27.学び方を学ぶ",
+                            "31.メンターの探し方",
+                            "32.メンターになる方法"
+                        ]
+                    },
+                    {
+                        "4.生産性(Productivity)": [
+                            "36.全ては集中から始まる",
+                            "40.自分に対して責任を取る",
+                            "43.時間浪費のメカニズム",
+                            "45.効果的な習慣の育て方"
+                        ]
+                    },
+                    "5.資産形成(Investing)",
+                    "6.フィットネス(Fitness)",
+                    "7.マインドセット(Mindset)"
+                ]
+            }
+        },
         {
             "date": "2023-09-05",
             "what": "脳科学の観点から集中力を取り戻す",
@@ -13,36 +47,41 @@
             }
         },
         {
-            "date": "2023-09-12",
-            "what": "技術者の為の総合的な生き方指南",
+            "date": "2023/spring",
+            "what": "人類社会の見え方を考察する社会哲学",
             "book": {
-                "author": "John Sonmez",
-                "translator": "長尾高弘",
-                "commentator": "まつもとゆきひろ(Matz)",
-                "publish date": "2022/2/21",
-                "page": 474,
-                "title": "SOFT SKILLS ソフトウェア開発者の人生マニュアル 第2版",
-                "url": "https://www.amazon.co.jp/dp/4296000500/",
-                "overview" : [
-                    "1.キャリア(Career)",
-                    "2.セルフマーケティング(Self Marketing)",
-                    {"3.学習(Learning)": [
-                        "27.学び方を学ぶ",
-                        "31.メンターの探し方",
-                        "32.メンターになる方法"
-                    ]},
-                    {"4.生産性(Productivity)": [
-                        "36.全ては集中から始まる",
-                        "40.自分に対して責任を取る",
-                        "43.時間浪費のメカニズム",
-                        "45.効果的な習慣の育て方"
-                    ]},
-                    "5.資産形成(Investing)",
-                    "6.フィットネス(Fitness)",
-                    "7.マインドセット(Mindset)"
-                ]
+                "author": "近内悠太",
+                "commentator": "茂木健一郎",
+                "publish date": "2020/3/11",
+                "page": 219,
+                "title": "世界は贈与でできている 資本主義の「すきま」を埋める倫理学",
+                "url": "https://www.amazon.co.jp/dp/B085NJC1HD/"
+            }
+        },
+        {
+            "date": "2022",
+            "what": "世界を覆う暗い人間観に希望を見出す",
+            "book": {
+                "author": "Rutger Bregman",
+                "translator": "野中 香方子",
+                "commentator": "Yuval Noah Harari",
+                "publish date": "2021/7/27",
+                "page": 272,
+                "title": "Humankind 希望の歴史 (上) 人類が善き未来をつくるための18章",
+                "url": "https://www.amazon.co.jp/dp/4163914072/"
+            }   
+        },
+        {
+            "date": "2022",
+            "what": "絶望的な状況で如何に希望を持ち続けられるか",
+            "book": {
+                "author": "Viktor Emil Frankl",
+                "translator": "池田香代子",
+                "publish date": "2002/11/6",
+                "page": 184,
+                "title": "夜と霧 新版",
+                "url": "https://www.amazon.co.jp/dp/4622039702/"
             }
         }
-    ],
-    "totalPages": 653
+    ]
 }

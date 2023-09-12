@@ -25,3 +25,17 @@ img {
   max-width: 100%;
   display: block;
 }
+
+section.list:nth-child(2n) {
+background-color: whitesmoke;}
+
+p {
+  font-size: 18px;
+  margin: 0.1rem 0;
+  padding: 0 1rem;
+}
+
+span {
+  font-size: 14px;
+  color: #66B;
+}
