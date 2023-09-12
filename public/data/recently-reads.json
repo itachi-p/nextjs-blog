@@ -1,0 +1,48 @@
+{
+    "recordsCount": 2,
+    "records": [
+        {
+            "date": "2023-09-05",
+            "what": "脳科学の観点から集中力を取り戻す",
+            "book": {
+                "author": "苫米地英人",
+                "publish date": "2014/4/14",
+                "page": 179,
+                "title": "「頭のゴミ」を捨てれば、脳は一瞬で目覚める!(Kindle)",
+                "url": "https://www.amazon.co.jp/dp/B00JP3222M/"
+            }
+        },
+        {
+            "date": "2023-09-12",
+            "what": "技術者の為の総合的な生き方指南",
+            "book": {
+                "author": "John Sonmez",
+                "translator": "長尾高弘",
+                "commentator": "まつもとゆきひろ(Matz)",
+                "publish date": "2022/2/21",
+                "page": 474,
+                "title": "SOFT SKILLS ソフトウェア開発者の人生マニュアル 第2版",
+                "url": "https://www.amazon.co.jp/dp/4296000500/",
+                "overview" : [
+                    "1.キャリア(Career)",
+                    "2.セルフマーケティング(Self Marketing)",
+                    {"3.学習(Learning)": [
+                        "27.学び方を学ぶ",
+                        "31.メンターの探し方",
+                        "32.メンターになる方法"
+                    ]},
+                    {"4.生産性(Productivity)": [
+                        "36.全ては集中から始まる",
+                        "40.自分に対して責任を取る",
+                        "43.時間浪費のメカニズム",
+                        "45.効果的な習慣の育て方"
+                    ]},
+                    "5.資産形成(Investing)",
+                    "6.フィットネス(Fitness)",
+                    "7.マインドセット(Mindset)"
+                ]
+            }
+        }
+    ],
+    "totalPages": 653
+}

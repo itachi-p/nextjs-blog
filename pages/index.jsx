@@ -13,17 +13,23 @@ export default function Home() {
       <section className={uniStyles.headingMd}>
         <p>Hi, I'm <strong>itachi-p</strong>.I love animals and like vegetable curry.</p>
         <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
+          (This is a sample website - you'll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
       <main>
-        <h1 className="title">
+        <h3 className="title">
           Read{' '}
-          <Link href={`/posts/first-post`}>
-            this page!
+          <Link href={`/posts/about`}>
+            about me!
           </Link>
-        </h1>
+        </h3>
+        <h3 className='title'>
+        <Link href={`/posts/recent-reads`}>
+            Recently read books
+          </Link>
+        </h3>
+
         <Link href="https://www.pinterest.jp/itachip38/">
         <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
         </Link>
