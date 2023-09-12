@@ -36,12 +36,18 @@ export default function Home() {
             My&nbsp;
             <Link href="https://lit.link/itachi">Lit.Link</Link>
           </li>
-        <li>
-        <Link href="https://www.pinterest.jp/itachip38/">
-          ビンタですと(？)🐧👏
-          <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
-        </Link>
-        </li>
+          <li>
+            My&nbsp;
+            <Link href="https://www.github.com/itachi-p/">
+              GitHub repositories
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.pinterest.jp/itachip38/">
+              ビンタですと(？)🐧👏
+              <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
+            </Link>
+          </li>
         </strong>
       </main>
 
