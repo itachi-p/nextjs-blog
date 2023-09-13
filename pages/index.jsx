@@ -1,25 +1,26 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import uniStyles from '../styles/utils.module.css';
+import Home from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Home() {
+export default function Index() {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={uniStyles.headingMd}>
+      <description className={Home.title}>
         <p>Hi, I'm <strong>itachi-p</strong>.</p>
         <p>I love animals🐻🐯🐱🐦‍⬛🐸🪲 and like vegetable curry🍛.</p>
-        {/* <p>
-          (This is a sample website - you'll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p> */}
-        <hr />
-      </section>
+        <p>This page is <strong><Link href="https://github.com/itachi-p/nextjs-blog">the repository</Link></strong> on my GitHub.</p>
+        <p>The source for this site is {' '}
+          <Link href="https://nextjs.org/learn">Next.js tutorial</Link>.
+        </p>
+      </description>
+      <hr />
       <main>
+        <h2>Contents:</h2>
         <strong>
           <li>
             Read{' '}
@@ -39,7 +40,7 @@ export default function Home() {
           <li>
             My&nbsp;
             <Link href="https://www.github.com/itachi-p/">
-              GitHub repositories
+              GitHub home
             </Link>
           </li>
           <li>
@@ -53,7 +54,7 @@ export default function Home() {
 
       <hr />
       <footer>
-        <p>© 2023 itachi-p</p>
+        <p><strong>copycat🐱 © 2023 itachi-p</strong> 🦉Owl writes Reservoir Docs.🐶🕶️</p>
       </footer>
     </Layout>
 
