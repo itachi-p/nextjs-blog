@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import Home from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '../components/footer';
 
 export default function Index() {
   return (
@@ -51,12 +52,7 @@ export default function Index() {
           </li>
         </strong>
       </main>
-
-      <hr />
-      <footer>
-        <p><strong>copycat🐱 © 2023 itachi-p</strong> 🦉Owl writes Reservoir Docs.🐶🕶️</p>
-      </footer>
+      <Footer />
     </Layout>
-
   );
 }
