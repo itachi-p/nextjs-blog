@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/footer';
 
-export default function Index() {
+export default function Home() {
   return (
     <Layout home>
       <Head>
@@ -25,8 +25,8 @@ export default function Index() {
         <strong>
           <li>
             Read{' '}
-            <Link href={`/posts/about`}>
-              about me!
+            <Link href={`/posts/blog`}>
+              blog
             </Link>
           </li>
           <li>
