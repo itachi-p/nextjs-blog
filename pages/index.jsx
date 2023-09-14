@@ -25,7 +25,7 @@ export default function Home() {
         <strong>
           <li>
             Read{' '}
-            <Link href={`/posts/blog`}>
+            <Link href={`/posts/blog-top`}>
               blog
             </Link>
           </li>

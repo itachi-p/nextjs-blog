@@ -32,7 +32,7 @@ export default function Blog({ allPostsData }) {
                     ))}
                 </ul>
             </section>
-            <h1>Sorry. This page is still under construction.</h1>
+            <h2>Sorry. This page is still under construction.</h2>
             <Image src="/images/nante-cotta.jpg"
                 width={480}
                 height={270}
