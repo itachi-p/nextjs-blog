@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-//import Home from '../styles/Home.module.css';
+import Home from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/footer';
@@ -11,9 +11,9 @@ export default function Index() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <description>
+      <description className={Home.title}>
         <p>Hi, I'm <strong>itachi-p</strong>.</p>
-        <p>I love animals🐻🐯🐱🐸🪲 and like vegetable curry🍛.</p>
+        <p>I love animals🐻🐯🐱🦆🐸🪲 and like vegetable curry🍛.</p>
         <p>This page is <strong><Link href="https://github.com/itachi-p/nextjs-blog">the repository</Link></strong> on my GitHub.</p>
         <p>The source for this site is {' '}
           <Link href="https://nextjs.org/learn">Next.js tutorial</Link>.
