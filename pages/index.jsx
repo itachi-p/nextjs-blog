@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section>
         <p>Hi, I'm <strong>itachi-p</strong>.</p>
         <p>I love animals🐻🐯🐱🦆🐸🪲 and like vegetable curry🍛.</p>
         <p>This page is <strong><Link href="https://github.com/itachi-p/nextjs-blog">the repository</Link></strong> on my GitHub.</p>
@@ -19,8 +19,8 @@ export default function Home() {
           <Link href="https://nextjs.org/learn">Next.js tutorial</Link>.
         </p>
       </section>
-      <section  className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Contents:</h2>
+      <section>
+        <h2>Contents:</h2>
         <ul>
           <li>
             Read{' '}
@@ -48,8 +48,6 @@ export default function Home() {
               ビンタですと(？)🐧👏
               <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
             </Link>
-            <small className={utilStyles.lightText}>
-              </small>
           </li>
         </ul>
       </section>

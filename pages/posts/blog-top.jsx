@@ -31,9 +31,7 @@ export default function Blog({ allPostsData }) {
                                 <Date dateString={date} />
                             </small>
                         </li>
-
                     ))}
-
                 </ul>
             </section>
             <h2>Sorry. This page is still under construction.</h2>
