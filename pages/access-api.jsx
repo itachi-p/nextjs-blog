@@ -15,7 +15,7 @@ export async function getServerSideProps() {
 export default function ApiAccess({ data }) {
     return (
         <div className={styles.container}>
-            <Image src="/images/tagawa_iikane.jpg" width={144} height={144} className={utilStyles.borderCircle} />
+            <Image src="/images/tagawa_iikane.jpg" width={250} height={200} className={utilStyles.borderCircle} />
             <h3 className={utilStyles.headingMd}>田川よいとこ一度はおいで 🐗=3</h3>
             <img src={"https:" + data.weather.current.condition.icon} />
             <p><span>気温:</span>{data.weather.current.temp_c}℃</p>
