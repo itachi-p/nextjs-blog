@@ -5,7 +5,7 @@ import Link from 'next/link';
 // サーバサイドレンダリングによるapi/weatherへのアクセス
 // 相対パスではなく、絶対パスである点に注意が必要。（特に本番環境へのデプロイ時）
 export async function getServerSideProps() {
-    const response = await fetch('https://nextjs-testapp02-blog.netlify.appapi/weather');
+    const response = await fetch('https://nextjs-testapp02-blog.netlify.app/api/weather');
     const data = await response.json();
 
     return { props: { data } };
