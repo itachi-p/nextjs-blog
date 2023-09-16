@@ -2,8 +2,10 @@ import styles from '../components/layout.module.css';
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link';
 
+// サーバサイドレンダリングによるapi/weatherへのアクセス
+// 相対パスではなく、絶対パスである点に注意が必要。（特に本番環境へのデプロイ時）
 export async function getServerSideProps() {
-    const response = await fetch('http://localhost:3000/api/weather');
+    const response = await fetch('https://nextjs-testapp02-blog.netlify.appapi/weather');
     const data = await response.json();
 
     return { props: { data } };
