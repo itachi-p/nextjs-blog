@@ -8,6 +8,11 @@
 
 import recentlyReads from '../../public/data/recently-reads.json';
 
+// Next.js API Routea is Serverless Functions
 export default function handler(req, res) {
-  res.status(200).json(recentlyReads);
+// https://nextjs-testapp02-blog.netlify.app/api/get-json
+// 上記URIにアクセスすると、以下のJSONの内容が表示される。
+  // res.status(200).json(recentlyReads);
+//更に上記をファイルとして保存するよう促す
+  res.status(200).send(recentlyReads);
 }
