@@ -33,20 +33,15 @@ export default function Home() {
               Recently read books
             </Link>
             <ul>
-            API Endpoint (You can get JSON data)
               <li>
                 <Link href={`/api/get-json`}>
-                  About recent read books
+                  API Endpoint
                 </Link>
+                &nbsp;(You can get JSON data)
               </li>
               <li>
                 <Link href={`/access-api`}>
-                  Access external API(sample data)
-                </Link>
-              </li>
-              <li>
-                <Link href={`/api/weather`}>
-                  田川市なう。🌞🐗
+                  Access external API(田川市のいま🐗🦌)
                 </Link>
               </li>
             </ul>
