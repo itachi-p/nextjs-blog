@@ -32,6 +32,13 @@ export default function Home() {
             <Link href={`/posts/recent-reads`}>
               Recently read books
             </Link>
+            <ul>
+              <li>
+                <Link href={`/api/get-json`}>
+                  API Endpoint (You can get JSON data)
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             My&nbsp;
