@@ -41,7 +41,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href={`/access-api`}>
-                  Access external API(田川市のいま🐗🦌)
+                  Access external API(田川のいま🐗🦌)
                 </Link>
               </li>
             </ul>
