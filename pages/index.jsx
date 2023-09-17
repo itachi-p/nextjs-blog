@@ -41,12 +41,12 @@ export default function Home() {
               </li>
               <li>
                 <Link href={`/access-api`}>
-                  Access external API(田川のいま🐗🦌)
+                  外部API接続テスト(田川のいま🐗🦌)
                 </Link>
               </li>
               <li>
                 <Link href={`/users`}>
-                  Access external API(JSONPlaceHolder sample)
+                  API接続→DB連携テスト(ダミーのユーザ一覧)
                 </Link>
               </li>
             </ul>

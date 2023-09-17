@@ -1,7 +1,18 @@
+import sqlite3 from 'sqlite3';
+
+const selectAll = (db, query) => {
+    return new Promise((resolve, reject) => {
+        db.all(query, (err, rows) => {
+            if (err) return reject(err);
+            return resolve(rows);
+        });
+    });
+};
+
 export default async function handler(req, res) {
-    // API Routes中の処理はサーバ側なので、下のconsole.log()はサーバ側のコンソールに出力される
-    console.log(req.method);
-    const response = await fetch('https://jsonplaceholder.typicode.com/users/');
-    const users = await response.json();
+    const db = new sqlite3.Database('./api_users.sqlite');
+    const users = await selectAll(db, 'SELECT * FROM users');
+    db.close();
+    
     res.status(200).json({ users });
 }

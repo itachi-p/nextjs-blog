@@ -2,32 +2,23 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../components/layout.module.css';
 
-export default function Users() {
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-        const fetchUsers = async () => {
-            const response = await fetch('/api/users');
-            const data = await response.json();
-            setUsers(data.users);
-        };
-        fetchUsers();
-    }, []);
+// ローカル環境でのAPI RoutesからのDatabase接続テスト
+// 相対パスではなく、絶対パスである点に注意が必要。（特に本番環境へのデプロイ時）
+export async function getServerSideProps() {
+    //const response = await fetch('https://nextjs-testapp02-blog.netlify.app/api/users');
+    const response = await fetch('http://localhost:3000/api/users');
+    const data = await response.json();
 
+    return { props: { data } };
+}
+
+export default function Users({ data }) {
     return (
         <div className={styles.container}>
-            <h2>Users</h2>
-            <hr />
-            <p><span>※データは<Link href="https://www.jsonplaceholder.org/">JSONPlaceholder</Link>のサンプルAPIを利用</span></p>
-            <p>ユーザ一覧と、各ユーザidに紐づく単体データ</p>
-            <p>各ユーザの詳細ページは<Link href="https://ja.wikipedia.org/wiki/%E8%AE%83%E5%B2%90%E3%81%86%E3%81%A9%E3%82%93">元祖てぬきうどん</Link>方式</p>
-            <p>(/api/users/[id]のJSONをそのまま表示)</p>
+            <h3>Users from connect DB</h3>
             <ul>
-                {users.map((user) => (
-                    <li key={user.id}>
-                        <Link href={`api/users/${user.id}`}>
-                            {user.name}
-                        </Link>
-                    </li>
+                {data.users.map((user) => (
+                    <li key={user.id}>{user.name}</li>
                 ))}
             </ul>
             <div className={styles.backToHome}>
