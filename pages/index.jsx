@@ -44,6 +44,11 @@ export default function Home() {
                   Access external API(田川のいま🐗🦌)
                 </Link>
               </li>
+              <li>
+                <Link href={`/users`}>
+                  Access external API(JSONPlaceHolder sample)
+                </Link>
+              </li>
             </ul>
           </li>
           <li>
