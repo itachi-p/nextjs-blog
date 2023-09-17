@@ -46,7 +46,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href={`/users`}>
-                  API接続→DB連携テスト(ダミーのユーザ一覧)
+                  API→DB連携テスト(ダミーのユーザ一覧)
                 </Link>
               </li>
             </ul>
