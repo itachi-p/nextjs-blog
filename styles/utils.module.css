@@ -42,9 +42,9 @@
     padding: 0;
     margin: 0;
   }
-  
-  .listItem {
-    margin: 0 0 1.25rem;
+
+  .listItem:nth-child(odd) {
+    background-color: aliceblue;
   }
   
   .lightText {

@@ -24,18 +24,18 @@ export default function Home() {
       <section>
         <h2 className={utilStyles.headingLg}>Contents:</h2>
         <ul>
-          <li>
+          <li className={utilStyles.listItem}>
             Read{' '}
             <Link href={`/posts/blog-top`}>
               blog
             </Link>
           </li>
-          <li>
+          <li className={utilStyles.listItem}>
             <Link href={`/posts/recent-reads`}>
               Recently read books
             </Link>
           </li>
-          <li>
+          <li className={utilStyles.listItem}>
             <details>
               <summary>API学習関連 (クリックで展開)</summary>
             <ol>
@@ -63,20 +63,20 @@ export default function Home() {
             </ol>
             </details>
           </li>
-          <li>
+          <li className={utilStyles.listItem}>
             My&nbsp;
             <Link href="https://lit.link/itachi">Lit.Link</Link>
           </li>
-          <li>
+          <li className={utilStyles.listItem}>
             My&nbsp;
             <Link href="https://www.github.com/itachi-p/">
               GitHub home
             </Link>
           </li>
-          <li>
+          <li className={utilStyles.listItem}>
             <Link href="https://www.pinterest.jp/itachip38/">
               ビンタですと(？)🐧👏
-              <Image src="/images/penguinshibaki.gif" height={144} width={144} alt="🐧👏" />
+              <Image src="/images/penguinshibaki.gif" height={120} width={120} alt="🐧👏" />
             </Link>
           </li>
         </ul>

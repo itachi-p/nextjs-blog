@@ -15,7 +15,9 @@ export async function getServerSideProps() {
 export default function ApiAccess({ data }) {
     return (
         <div className={styles.container}>
+            <Link href="https://palette.jp.net/">
             <Image src="/images/tagawa_iikane_pallet.jpg" width={250} height={200} className={utilStyles.borderCircle} alt='いいかねパレット' priority />
+            </Link>
             <h3 className={utilStyles.headingMd}>田川よいとこ一度はおいで 🐗=3</h3>
             <img src={"https:" + data.weather.current.condition.icon} />
             <p><span>気温:</span>{data.weather.current.temp_c}℃</p>
