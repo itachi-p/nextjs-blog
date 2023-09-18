@@ -4,6 +4,8 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/footer';
+// ちなみにこのアプリでもTailWind CSSは利用可能（どちらか一方）
+// import 'tailwindcss/tailwind.css';
 
 export default function Home() {
   return (
@@ -32,12 +34,16 @@ export default function Home() {
             <Link href={`/posts/recent-reads`}>
               Recently read books
             </Link>
-            <ul>
+          </li>
+          <li>
+            <details>
+              <summary>API学習関連 (クリックで展開)</summary>
+            <ol>
               <li>
                 <Link href={`/api/get-json`}>
-                  API Endpoint
+                  内部API Endpoint作成テスト
                 </Link>
-                &nbsp;(You can get JSON data)
+                &nbsp;(JSON & Postman)
               </li>
               <li>
                 <Link href={`/access-api`}>
@@ -46,10 +52,16 @@ export default function Home() {
               </li>
               <li>
                 <Link href={`/users`}>
-                  API→DB連携テスト(ダミーのユーザ一覧)
+                  外部API→DB連携(DB接続部はローカルのSQLite3でテスト)
                 </Link>
               </li>
-            </ul>
+              <li>
+                <Link href="https://graphql-prisma-supabase.vercel.app/">
+                  GraphQL & Prisma & Supabase & TailWind CSS
+                </Link>
+              </li>
+            </ol>
+            </details>
           </li>
           <li>
             My&nbsp;

@@ -23,11 +23,11 @@ export default function ApiAccess({ data }) {
             <p><span>風速:</span>{data.weather.current.wind_mph}m/h</p>
             <p><span>風向:</span>{data.weather.current.wind_dir}</p>
             <p><span>気圧:</span>{data.weather.current.pressure_mb}㍊</p>
-            <p><span>猪指数:</span>🐗🐗🐗🦌🦋</p>
+            <p><span>猪指数:</span>🐗🐗🦌🦋</p>
             <hr />
             <h4>
                 <Link href="https://weather-report-react-ts.netlify.app/">
-                    世界の各都市の天候はこちら(React+TypeScript)
+                    &rarr;世界の各都市の天候はこちら(React+TypeScript)
                 </Link>
             </h4>
             <div className={styles.backToHome}>

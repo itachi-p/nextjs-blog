@@ -31,8 +31,12 @@ export default function Users() {
                 ))}
             </ul>
             <hr />
-            <p><span>API RoutesからのDB接続は別途実施</span></p>
-            <p>※GraphQL & Prisma & Supabase 連携別アプリとして切り出し予定</p>
+            <p><span>※API RoutesからのDB接続は別途実施</span></p>
+            <p>&rarr;
+                <Link href="https://graphql-prisma-supabase.vercel.app/">
+                    GraphQL & Prisma & Supabase 連携テスト
+                </Link>
+            </p>
             <div className={styles.backToHome}>
                 <Link href="/">← Back to home</Link>
             </div>
