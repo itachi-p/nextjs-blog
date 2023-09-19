@@ -123,11 +123,11 @@ $ npx install apollo-server-micro micro graphql
 その後、クライアント側には影響を与えずバックエンド側でデータリソースを段階的に旧来のRESTからGraphQLへ移行していく
 …といった導入も可能。
 
-![GraphQLの宇宙観を顕す曼荼羅](../public/images/Apollo-GraphQL.png)
+![GraphQLの宇宙観を顕す曼荼羅](/images/Apollo-GraphQL.png)
 
 （引用説明）
-Apollo を利用することで、あらゆるデータが GraphQL サーバーとして集約される。
-こうすることでバックエンドの複雑性が Apollo によって隠蔽され、クライアントおよびバックエンドは Apollo サーバーとの接続にのみ注意すればよくなる。
+Apollo を利用することで、あらゆるデータが GraphQL サーバーとして集約される。  
+こうすることでバックエンドの複雑性が Apollo によって隠蔽され、クライアントおよびバックエンドは Apollo サーバーとの接続にのみ注意すればよくなる。  
 例えば REST サーバーから GraphQL サーバーに移行したいのであれば、一度 Apollo を間に挟んで GraphQL サーバーを利用できる状態にしておき、後から段階的に移行していく、などという方法がとれる。
 
 ---
