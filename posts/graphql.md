@@ -52,19 +52,22 @@ GraphQLの理解を深める、というよりも「とりあえず一度使っ�
 		- そのユーザーに紐づく購買履歴は別のエンドポイントにアクセスが必要(アンダーフェッチ)
 
 上記の課題をGraphQLは単一のエンドポイントに対してクエリを投げる形で最適なデータを取得できる
-と、これだけ聞くとメリットしかないんでは？と思えるがそんな単純な話でもない。
+と、これだけ聞くとメリットしかないんでは？と思えるがそんな単純な話でもない。  
 
-他にも独自の機能・RESTに勝る点もあるが、当然デメリット・弱点もある。
+他にも独自の機能・RESTに勝る点もあるが、当然デメリット・弱点もある。  
+
 なのでネット上では賛否両論（宗教戦争）であり、
 「RESTの時代オワタ＼(^o^)／これからはGraphQL」
-「は？GraphQLなんて使えんわヴォケ」などと各々好き勝手言われている模様。
+「は？GraphQLなんて使えんわヴォケ」などと各々好き勝手言われている模様。  
 
 「業務で触れる機会は無いけど、会社に影響の無い個人開発で使ってみた」
-といった好奇心ドリブンなエンジニアによる両者を比較した上で好意的・中立的な声も見掛けられる。
+といった好奇心ドリブンなエンジニアによる両者を比較した上で好意的・中立的な声も見掛けられる。  
+
+---
 
 (所感)
 これを深めることが強み・差別化に成り得るかもしれないが、
-現状では「一度個人的にRESTでなくGraphQLでAPIを作ってみたことがある」くらいでいいかもしれない。
+現状では「一度個人的にRESTでなくGraphQLでAPIを作ってみたことがある」くらいでいいかもしれない。  
 他に優先的に学習すべき（と思われる）学習対象が山積しているので、軽く触れるに留めそちらを優先する。
 
 #### 進捗管理
@@ -110,17 +113,18 @@ micro 用の Apollo Server の apollo-server-micro もインストール
 ```sh
 $ npx install apollo-server-micro micro graphql
 ```
-※npxだとverbose(冗長)errorが出たので、勝手にnpmに変えたら問題なく？インストールできたっぽい
+※npxだとverbose(冗長)errorが出たので、勝手にnpmに変えたら問題なく？インストールできたっぽい  
 
-今回は使用フレームワークがNext.jsなので、Node.js(JavaScript)を使ったGraphQLサーバ(~~ラブライブ~~ライブラリ)の中でメジャーなApollo-server(& Apollo-client)を選択。
+今回は使用フレームワークがNext.jsなので、Node.js(JavaScript)を使ったGraphQLサーバ(~~ラブライブ~~ ライブラリ)の中でメジャーなApollo-server(& Apollo-client)を選択。  
+
 殆どの言語用にGraphQLを利用する為のライブラリが複数用意されている。
 - 異なる規格のDB, API, 言語WAF等の複数のデータリソースと連携・それらを統合したAPIサーバを構築
 - それをクライアントとして利用するのを支援
 
 [GraphQL用の各言語ライブラリ一覧](https://graphql.org/code/)
 
-大本のデータ取得元としては既存のものから収集し、それをサーバ側でGraphQLの単一のエンドポイントとしてクライアント側に公開。
-その後、クライアント側には影響を与えずバックエンド側でデータリソースを段階的に旧来のRESTからGraphQLへ移行していく
+大本のデータ取得元としては既存のものから収集し、それをサーバ側でGraphQLの単一のエンドポイントとしてクライアント側に公開。  
+その後、クライアント側には影響を与えずバックエンド側でデータリソースを段階的に旧来のRESTからGraphQLへ移行していく  
 …といった導入も可能。
 
 ![GraphQLの宇宙観を顕す曼荼羅](/images/Apollo-GraphQL.png)
@@ -148,10 +152,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 ```
-すべてのコンポーネントで Apollo Client が利用できるように_app.tsx ファイルで Apollo Client の設定を行い、Apollo Provider タグで Component タグを包む。
+すべてのコンポーネントで Apollo Client が利用できるように_app.tsx ファイルで Apollo Client の設定を行い、Apollo Provider タグで Component タグを包む。  
 
 なお、ドキュメントルートは/pages/ または /app/index.tsx
-/app/はNext.jsの新しいバージョンからのホームで、現状古い仕様となった/pages/もどちらもOkだが、**両方にindexファイルを置くとコンフリクト**する
+/app/はNext.jsの新しいバージョンからのホームで、現状古い仕様となった/pages/もどちらもOkだが、**両方にindexなど同名ファイルを置くとコンフリクト**する
 
 ---
 
@@ -189,6 +193,7 @@ Learn how: https://pris.ly/d/vercel-build
 ```
 どうやらPrismaクライアントの生成タイミングの問題の模様。  
 ビルド中に`prisma generate` コマンドを実行して生成する必要がありそう。  
+
 方法については、https://pris.ly/d/vercel-build (または以下)を参照  
 https://www.prisma.io/docs/guides/other/troubleshooting-orm/help-articles/vercel-caching-issue
 
