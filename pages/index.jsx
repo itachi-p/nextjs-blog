@@ -57,7 +57,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href="https://graphql-prisma-supabase.vercel.app/">
-                  GraphQL & Prisma & Supabase & TailWind CSS
+                  GraphQL & Prisma & Supabase & Tailwind CSS
                 </Link>
               </li>
             </ol>
