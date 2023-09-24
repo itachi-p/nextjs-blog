@@ -89,7 +89,7 @@ GraphQLの理解を深める、というよりも「とりあえず一度使っ�
 	- [x] Apollo Client のインストール
 		- [ ] (要追加対応)更新の度に新たなインスタンスが作られてすぐに上限に達するエラー
 			- [ ] 既存のインスタンスを再利用し、更新の度にインスタンスを増やさない
-			- [ ] Best practice for instantiating PrismaClient with Next.js
+			- [ ] (公式)[Best practice for instantiating PrismaClient with Next.js](https://www.prisma.io/docs/guides/other/troubleshooting-orm/help-articles/nextjs-prisma-client-dev-practices)
 - [x] 6. デプロイ
 	- [x] Apollo Client の URI の変更
 	- [x] GitHub でのリポジトリの作成
@@ -266,15 +266,18 @@ Postgresのデータ登録件数もカラムも少ないのでピンと来ない
 
 ---
 
-**(所感)**
+**(所感)**  
 GraphQLへの理解を深めることが強み・差別化に成り得るかもしれないが、
 現状では「一度個人的にGraphQLでAPIを作ってみたことがある」くらいでよさげ。  
 他に優先すべき学習対象が山積しているので、軽く触れるに留める。  
 
-就活戦略として割り切るのであれば、いっそ一定期間コードを書かずにAWS Solution Architect-Associate資格を取得した方がアピール要素としてモアベター(企業によって評価が全く違う気はする)なのかもしれない。  
-つまり、GraphQLにしてもAWS認定資格のAsoociateレベルにしても、「どう転ぶかわからない」率が高い。  
+就活戦略として割り切るのであれば、いっそ一定期間コードを書かずにAWS Solution Architect-Associate資格を取得した方がアピール要素としてモアベター(企業によって評価が全く違う気はする)かもしれない。  
+
+GraphQLにしてもAWS認定資格のAsoociateレベルにしても、「どう転ぶかわからない」率が高い。  
 やるならいっそ、そこに全振りしてエキスパートを名乗れるくらいの勢いでやるべきかもしれない。  
-そうでないなら、（現状において）どちらも多大な学習コストを割く対象としては優先度低めと判断。
+そうでないなら、（現状において）どちらも多大な学習コストを割く対象としては優先度低めと判断。  
+
+---
 
 (おまけ)
 [Tailwind CSS実践入門第3章 Tailwind CSSの活用](https://gihyo.jp/article/2023/07/tailwindcss-practice-03)
