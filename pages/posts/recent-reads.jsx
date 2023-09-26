@@ -11,8 +11,8 @@ export default function RecentReads(props) {
             <Head>
                 <title>Recently read books📖</title>
             </Head>
-            <h1>Recently read books</h1>
-            <p>(ORDER BY read_date DESC)</p>
+            <h1>Recently read books📖</h1>
+			<p><Link href="https://bookmeter.com/users/1441045">💡読書メーター</Link></p>
             <hr />
             {/* JSONファイルを読み込み、一覧表示する */}
             {postLists.map((post, index) => (

@@ -1,5 +1,16 @@
 {
     "records": [
+		{
+            "date": "2023-09-26",
+            "what": "外的動機づけ(信賞必罰)から内発的動機づけへ",
+            "book": {
+                "author": "Daniel H. Pink",
+                "publish date": "2010/7/7",
+                "page": 306,
+                "title": "モチベーション3.0 持続する「やる気!」をいかに引き出すか",
+                "url": "https://www.amazon.co.jp/dp/product/4062144492"
+            }
+        },
         {
             "date": "2023-09-12",
             "what": "技術者の為の総合的な生き方指南",
